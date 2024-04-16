@@ -1,0 +1,17 @@
+<main>
+	<section class="roulette-container">
+		<div id="selector"></div>
+
+		<div id="roulette" #roulette>
+			<div class="roulette-section" *ngFor="let option of rouletteOptions">
+			  <div class="roulette-section-container" [style.background-color]="option.fondo">
+				<p>{{ option.value }}</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="button-container">
+			<button id="spin" #spinButton (click)="spinRoulette()">Girar</button>
+		  </div>
+		  
+</section>
+</main>
